@@ -5,75 +5,69 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type='text/javascript' src='javascript.js'></script>
+	<script type="text/javascript" src="javascript.js"></script>
 </head>
 <body>
   <div id="center-pane">
-    <div class="button-divider"></div>
-    <a href="#">
-      <div class="nav-button" data-page="about">
-        <img class="nav-centered-image" src='images/about.png' alt="about">
-        <div class="nav-info-box">
-          <img src="images/about-icon.png" alt="i">
-        </div>
-      </div>
-    </a>
-    <div class="button-divider" ></div>
-    <a href="#">
-      <div class="nav-button" data-page="goals">
-        <img class="nav-centered-image" src='images/goals.png' alt="goals">
-        <div class="nav-info-box">
-          <img src="images/goals-icon.png" alt="triumphant man">
-        </div>
-      </div>
-    </a>
-    <div class="button-divider"></div>
-  <div class="content" id="about">
+		<nav>
+	    <a href="#">
+	      <img id="aboutImg" class="nav-button" data-page="about" src="images/about.png" alt="about">
+	      <img id="aboutIcon" class="nav-info-box" src="images/about-icon.png" alt="goals">
+	    </a>
+	    <a href="#">
+	      <img id="goalsImg" class="nav-button" data-page="goals" src="images/goals.png" alt="goals">
+	      <img id="goalsIcon" class="nav-info-box" src="images/goals-icon.png" alt="triumphant man">
+	    </a>
+		</nav>
+  <article id="about">
     <h1>Ben Hernandez</h1>
-    <img class="TextWrapRight" src="images/texas.png" alt="texas">
-    <br>
-    <p>
-      Howdy! My name is Ben Hernandez and I proudly hail from the great
-      state of Texas; pretty much born and raised. I was born in a tiny town
-      on the Louisanna/Texas border called Groves. When I was six weeks old, my
-      dad got a job in Pennsylvania and we moved up there. Eight years later,
-      my parents were homesick for our great state and we moved back. I lived
-      in Texas all the way until I moved to Denver 6 months ago. Denver was our
-      family's goto vacation spot when I was a kid so when I finally got the
-      guts to move away, I choose Denver.
-    </p>
-    <div style="float: left; width: 100%">
+		<section>
+			<h2>About Me!</h2>
+	    <img class="TextWrapRight" src="images/texas.png" alt="texas">
+	    <br>
+	    <p>
+	      Howdy! My name is Ben Hernandez and I proudly hail from the great
+	      state of Texas; pretty much born and raised. I was born in a tiny town
+	      on the Louisanna/Texas border called Groves. When I was six weeks old, my
+	      dad got a job in Pennsylvania and we moved up there. Eight years later,
+	      my parents were homesick for our great state and we moved back. I lived
+	      in Texas all the way until I moved to Denver 6 months ago. Denver was our
+	      family's goto vacation spot when I was a kid so when I finally got the
+	      guts to move away, I choose Denver.
+	    </p>
+		</section>
+	  <section style="float: left; width: 100%">
       <h2>Past Life</h2>
       <img class="TextWrapLeft" src="images/UTSA-256.png" alt="utsa">
       <ul>
-        <li>Graduated from the University of Texas at San Antonio
+        <li>Graduated from the University of Texas at San Antonio</li>
         <div style="text-indent: 50px">(BS in Math)</div>
         <li>High School Math Teacher (8 years)</li>
       </ul>
-    </div>
-    <div style="float: left">
+    </section>
+    <section style="float: left">
       <h2>My GIFs</h2>
-      <div style="float: left">
+      <figure>
         <img class="TextWrapLeft" src="images/stingray.gif" alt="stingray">
-        <p>
+        <figcaption>
           The first one represents how I felt going through some of these prework
           tutorials. Her face pretty much perfectly matches mine going through
           the web tutorials and not having access to my auto-complete. It felt
           like coding in the 90s.
-        </p>
-      </div>
-      <div style="float: left">
+        </figcaption>
+      </figure>
+      <figure>
         <img class="TextWrapLeft" src="images/giphy.gif" alt="skateboard fall">
-        <p>
+        <figcaption>
           This other image represents how I think this program is going to feel
           sometimes. I am about to spend six months working with stuff I am
           unfamiliar with and I am going to fall and fail but the end is still
           going to be epic :)
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="content" id="goals">
+        </figcaption>
+      </figure>
+    </section>
+  </article>
+  <article id="goals">
     <h1>My Goals</h1>
     <ul>
       <li>Get a job</li>
@@ -89,7 +83,7 @@
       I would jump on it. I would also love to be somewhere where I can use my
       math degree as well.
     </p>
-  </div>
+  </article>
   </div>
 </body>
 </html>
